@@ -2,11 +2,11 @@ local enabled = false
 
 pcall(function()
     enabled = loadstring(game:HttpGet(
-        "https://raw.githubusercontent.com/pskyc4665k-coder/kill/main/kill.lua"
+        "https://raw.githubusercontent.com/pskyc4665k-coder/kill/main/kill.lua?t=" .. os.time()
     ))()
 end)
 
-if not enabled then
+if enabled ~= true then
     warn("Menu disabled by developer.")
     return
 end
